@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> AI & Web Developer</title>
+  <meta name="description" content="Portfolio of Your Name, an AI and web developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo">Tushar</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle dark and light theme">◐</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hero-kicker">AI & web developer</p>
+      <h1>Full-Stack MERN Developer Building Scalable Web Applications</h1>
+      <p class="hero-sub">AI Web Developer learning AI/ML. Open to internships and freelance work.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="../Tushar Resume.pdf" download>Download resume</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>Hi, I am Tushar a Computer Science Engineer passionate about algorithmic problem-solving and building fast, reliable Websites. <br>
+
+I love digging into how systems work under the hood, optimizing memory and runtime efficiency, and turning raw data into useful tools. My core stack includes C++, Python (NumPy, web scraping), and computer networking fundamentals, backed by consistent hands-on practice solving complex data structure and algorithm challenges.<br>
+
+Beyond coding, I enjoy video editing and visual storytelling, which brings a sharp eye for detail and user experience to everything I build. I'm actively seeking software engineering opportunities—take a look at my work below or connect with me via LinkedIn or email.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Tech stack</h2>
+      <ul class="skills-grid">
+        <li>MongoDB / SQL</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Tailwind CSS</li>
+        <li>Node.js / Express</li>
+        <!-- <li>SQL</li> -->
+        <li>Python(Numpy,Pandas)</li>
+        <li>LLM APIs &amp; RAG</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's talk</h2>
+      <p>Got a project or an opportunity? Send me a message, and I'll reply soon.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:tusharkocher33@gmail.com">tusharkocher33@gmail.com</a></li>
+        <li><a href="https://github.com/1823Tushar" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tushar-kocher-713a33397" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Tushar</footer>
+
+  <dialog id="projectModal" aria-labelledby="modalTitle">
+    <button class="close-btn" id="closeModal" aria-label="Close">✕</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p class="modal-stack" id="modalStack"></p>
+    <div class="modal-links">
+      <a class="btn primary" id="modalLive" target="_blank" rel="noopener">Live demo</a>
+      <a class="btn" id="modalCode" target="_blank" rel="noopener">Source code</a>
+    </div>
+  </dialog>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
